@@ -18,8 +18,8 @@ p { color:var(--muted) }
 .skip:focus { top:1rem; background:white; padding:10px; z-index:5 }
 .bar { background:#eaf4f1; color:#254c47; font-size:.77rem; font-weight:650 }
 .bar .wrap,.header,.bottom,.cta .wrap { display:flex; justify-content:space-between; align-items:center; gap:18px }
-.bar .wrap { min-height:34px }
-.bar a { text-decoration:none }
+.bar .wrap { min-height:34px; padding-block:5px }
+.bar a { text-decoration:none; white-space:nowrap }
 .bar a:hover { text-decoration:underline }
 .header { min-height:83px }
 .logo img { width:176px; height:60px; object-fit:contain }
@@ -139,6 +139,7 @@ a.card:hover { background:#e8f6f0; border-color:#91bfb3 }
   .mobile-action a+a { background:var(--teal); color:#fff; border-color:var(--teal) }
 }
 @media(max-width:440px) {
+  .bar .wrap { flex-wrap:wrap; gap:3px 18px }
   .cards,.steps,.foot { grid-template-columns:1fr }
   .foot>div:first-child { grid-column:auto }
 }
