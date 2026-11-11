@@ -232,8 +232,8 @@ a.card:hover { background:#e8f6f0; border-color:#91bfb3 }
 .doctor-card-text { grid-template-columns:1fr }
 .contact h2 { margin-bottom:0; font-size:1.35rem; letter-spacing:-.025em }
 .contact-map { margin:24px 0 0; max-width:806px }
-.contact-map img { border:1px solid var(--line); border-radius:12px }
+.direction-map { display:block; width:100%; height:clamp(260px,38vw,410px); border:0; background:#eef4f8 }
+.contact-map .direction-map { border:1px solid var(--line); border-radius:12px }
 .contact-map figcaption { margin-top:8px; color:var(--muted); font-size:.85rem }
-.hospital-photo.map-preview img { height:auto; object-fit:contain; background:#eef4f8 }
-.map-preview a { display:block }
-.map-preview a:focus-visible { outline-offset:-4px }
+.map-preview .direction-map { height:clamp(235px,28vw,350px) }
+.map-preview figcaption a { color:inherit }
