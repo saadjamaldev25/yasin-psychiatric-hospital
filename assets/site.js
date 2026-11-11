@@ -1,6 +1,6 @@
 const button = document.querySelector('.menu');
 const nav = document.querySelector('.nav');
-const mobile = matchMedia('(max-width: 760px)');
+const mobile = matchMedia('(max-width: 980px)');
 function setMenu(open) {
   nav.hidden = mobile.matches && !open;
   button.setAttribute('aria-expanded', String(open));

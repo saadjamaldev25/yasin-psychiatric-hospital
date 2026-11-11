@@ -73,6 +73,7 @@ a.card:hover { background:#e8f6f0; border-color:#91bfb3 }
 .cta h2 { font-size:clamp(1.9rem,4vw,3rem) }
 .cta p { margin-top:9px }
 .cta .btn { flex:none }
+.cta .actions { margin-top:0 }
 .footer { background:var(--ink); color:white; padding:38px 0 16px }
 .foot { display:grid; grid-template-columns:1fr .8fr 1fr; gap:25px; margin-bottom:24px }
 .foot img { width:175px }
@@ -87,7 +88,7 @@ a.card:hover { background:#e8f6f0; border-color:#91bfb3 }
 .steps article { border-top:1px solid var(--teal); padding-top:10px }
 .contact { grid-template-columns:1fr 1fr }
 @media(max-width:1100px) { .header>.btn { display:none } }
-@media(max-width:760px) {
+@media(max-width:980px) {
   .wrap { width:calc(100% - 32px) }
   .header { min-height:65px; flex-wrap:wrap; gap:0 }
   .logo img { width:155px; height:52px }
@@ -224,3 +225,15 @@ a.card:hover { background:#e8f6f0; border-color:#91bfb3 }
   from { opacity:.62; transform:translateY(10px) }
   to { opacity:1; transform:translateY(0) }
 }
+
+.prose p + p { margin-top:1em }
+.prose ul { padding-inline-start:1.25rem }
+.prose li + li { margin-top:.45em }
+.doctor-card-text { grid-template-columns:1fr }
+.contact h2 { margin-bottom:0; font-size:1.35rem; letter-spacing:-.025em }
+.contact-map { margin:24px 0 0; max-width:806px }
+.contact-map img { border:1px solid var(--line); border-radius:12px }
+.contact-map figcaption { margin-top:8px; color:var(--muted); font-size:.85rem }
+.hospital-photo.map-preview img { height:auto; object-fit:contain; background:#eef4f8 }
+.map-preview a { display:block }
+.map-preview a:focus-visible { outline-offset:-4px }
