@@ -236,3 +236,10 @@ a.card:hover { background:#e8f6f0; border-color:#91bfb3 }
 .direction-map { display:block; width:100%; height:clamp(300px,39vw,480px); border:0; background:#eef4f8 }
 .contact-map .direction-map { border:1px solid var(--line); border-radius:12px }
 .contact-map figcaption { margin-top:8px; color:var(--muted); font-size:.85rem }
+
+.book-preview { display:grid; align-content:space-between; gap:36px; width:100%; min-height:165px; padding:20px; border-radius:9px; background:#194c4c; color:#fff }
+.book-preview span { font-size:.8rem; color:#b9f2df }
+.book-preview strong { font-size:1.25rem; line-height:1.25 }
+.resource-video,.resource-photo img { width:100%; aspect-ratio:16/9; object-fit:cover; height:auto; border-radius:8px }
+.resource-photo { margin:0 }
+.resource-photo a { display:block; width:100% }
