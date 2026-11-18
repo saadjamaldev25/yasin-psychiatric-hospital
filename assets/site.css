@@ -243,3 +243,7 @@ a.card:hover { background:#e8f6f0; border-color:#91bfb3 }
 .resource-video,.resource-photo img { width:100%; aspect-ratio:16/9; object-fit:cover; height:auto; border-radius:8px }
 .resource-photo { margin:0 }
 .resource-photo a { display:block; width:100% }
+
+.gallery-grid .resource-photo img { aspect-ratio:3/4; display:block; object-fit:cover }
+.gallery-grid .resource-photo figcaption { font-weight:600 }
+.gallery-grid .resource-photo a:focus-visible { outline:3px solid currentColor; outline-offset:4px; border-radius:8px }
